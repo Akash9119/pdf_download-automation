@@ -1,5 +1,4 @@
-#!/usr/bin/env python
-# coding: utf-8
+# Importing important modules
 
 import os
 import requests
@@ -29,7 +28,7 @@ def extract_url_pdf(input_url, folder_path=os.getcwd()):
         try:
             filename = os.path.join(folder_location, link['href'].split('/')[-1])
             with open(filename, 'wb') as f:
-                response = requests.get(urljoin(url, link['href']), verify=True)  # Adjusted here
+                response = requests.get(urljoin(url, link['href']), verify=True)
                 f.write(response.content)
 
             link_text.append(str(link.text))

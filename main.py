@@ -55,4 +55,4 @@ def extract_url_pdf(input_url, folder_path=os.getcwd()):
     print("All Pdf files downloaded and Excel File Created")
 
 
-extract_url_pdf(input_url="https://www.mca-marines.org/article-collections/dr-wick-murray/")
+extract_url_pdf(input_url="Demo_url.com")
